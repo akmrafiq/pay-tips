@@ -5,3 +5,7 @@
 /Pay-Tips/.vs/Pay-Tips
 /Pay-Tips/Pay-Tips.API/bin/Debug/netcoreapp3.1
 /Pay-Tips/Pay-Tips.API/obj
+/Pay-Tips/pay-Tips.Core/bin/Debug/netcoreapp3.1
+/Pay-Tips/pay-Tips.Core/obj
+/Pay-Tips/Pay-Tips.Data/bin/Debug/netcoreapp3.1
+/Pay-Tips/Pay-Tips.Data/obj
