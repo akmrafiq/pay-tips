@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pay-Tips.API", "Pay-Tips.AP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pay-Tips.Data", "Pay-Tips.Data\Pay-Tips.Data.csproj", "{6C867524-0D99-4134-A0FC-F3C80D7BDBCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pay-Tips.Core", "pay-Tips.Core\pay-Tips.Core.csproj", "{8A3DB09A-BA28-4DD7-80C5-0742DE2D2A35}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pay-Tips.Core", "pay-Tips.Core\Pay-Tips.Core.csproj", "{8A3DB09A-BA28-4DD7-80C5-0742DE2D2A35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

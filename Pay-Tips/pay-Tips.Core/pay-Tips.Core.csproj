@@ -2,7 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>pay_Tips.Core</RootNamespace>
+    <RootNamespace>Pay_Tips.Core</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Contexts\" />
+    <Folder Include="Entities\" />
+  </ItemGroup>
 
 </Project>
