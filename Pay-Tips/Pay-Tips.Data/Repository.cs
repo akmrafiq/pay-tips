@@ -115,7 +115,5 @@ namespace Pay_Tips.Data
 
             return (data, total, totalDisplay);
         }
-
-       
     }
 }
