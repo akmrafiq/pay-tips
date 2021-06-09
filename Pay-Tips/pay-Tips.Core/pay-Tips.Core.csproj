@@ -5,9 +5,4 @@
     <RootNamespace>Pay_Tips.Core</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Contexts\" />
-    <Folder Include="Entities\" />
-  </ItemGroup>
-
 </Project>
