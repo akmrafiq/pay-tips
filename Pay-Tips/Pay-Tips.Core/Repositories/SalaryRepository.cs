@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Pay_Tips.Core.Repositories
 {
-    public class SalaryRepository:Repository<Salary, int, PayContext>
+    public class SalaryRepository:Repository<Salary, int, PayContext>, ISalaryRepository
     {
         private PayContext _payContext;
 

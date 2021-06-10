@@ -8,11 +8,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Pay_Tips.Core;
+using Pay_Tips.Core.Contexts;
 using Pay_Tips.Data;
 
 namespace Pay_Tips.API
@@ -40,6 +42,15 @@ namespace Pay_Tips.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var connectionStringName = "DefaultConnection";
+            var connectionString = Configuration.GetConnectionString(connectionStringName);
+            var migrationAssemblyName = typeof(Startup).Assembly.FullName;
+
+            services.AddDbContext<PayContext>(options =>
+                options.UseSqlServer(connectionString, 
+                    m=>m.MigrationsAssembly(migrationAssemblyName)));
+            
+
             services.AddControllers();
         }
 

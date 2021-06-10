@@ -7,9 +7,9 @@ using System.Text;
 
 namespace Pay_Tips.Core.Repositories
 {
-    public class EmployeeRepository:Repository<Employee,int,PayContext>
+    public class EmployeeRepository:Repository<Employee,int,PayContext>, IEmployeeRepository
     {
-        private PayContext _payContext;
+        private readonly PayContext _payContext;
         
         public EmployeeRepository(PayContext payContext):
             base(payContext)
