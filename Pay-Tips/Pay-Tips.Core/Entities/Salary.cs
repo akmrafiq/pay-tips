@@ -14,8 +14,7 @@ namespace Pay_Tips.Core.Entities
         public double GrossAmount 
         {
             get => this.GrossAmount;
-            set => this.GrossAmount = 
-                this.BasicAmount + this.ClaimAmount ?? this.BasicAmount;
+            set => this.GrossAmount = this.BasicAmount + this.ClaimAmount ?? this.BasicAmount;
         }
         public int EmployeeId { get; set; }
         

@@ -7,7 +7,7 @@ namespace Pay_Tips.Core.Entities
     public enum Gender
     {
         Male=1,
-        Femaile
+        Female
     }
 
     public enum MaritalStatus

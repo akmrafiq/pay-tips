@@ -8,8 +8,8 @@ namespace Pay_Tips.Core.Contexts
 {
     public class PayContext:DbContext
     {
-        private string _connectionString;
-        private string _migrationAssemblyName;
+        private readonly string _connectionString;
+        private readonly string _migrationAssemblyName;
 
         public PayContext(string connectionString, string migrationAssemblyName)
         {
@@ -41,11 +41,11 @@ namespace Pay_Tips.Core.Contexts
                 .WithMany(p => p.PaymentClaims)
                 .HasForeignKey(p => p.EmployeeId);
 
-            builder.Entity<Employee>()
-                .HasIndex("FirstName, LastName, Designation, Department, Email, Phone");
+            //builder.Entity<Employee>()
+            //    .HasIndex("FirstName, LastName, Designation, Department, Email, Phone");
 
-            builder.Entity<Salary>()
-                .HasIndex("MonthName, BaiscAmount, ClaimAmount, GrossAmount");
+            //builder.Entity<Salary>()
+            //    .HasIndex("MonthName, BaiscAmount, ClaimAmount, GrossAmount");
 
             base.OnModelCreating(builder);
         }
