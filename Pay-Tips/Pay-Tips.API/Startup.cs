@@ -65,7 +65,7 @@ namespace Pay_Tips.API
                 app.UseDatabaseErrorPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 

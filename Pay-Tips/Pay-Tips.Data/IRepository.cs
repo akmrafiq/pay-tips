@@ -14,6 +14,8 @@ namespace Pay_Tips.Data
         where TEntity : class, IEntity<TKey>
         where TContext : DbContext
     {
+
+        TEntity GetById(TKey id);
         Task AddAsync(TEntity entity);
         Task RemoveAsync(TKey id);
         Task<TEntity> GetByIdAsync(TKey id);

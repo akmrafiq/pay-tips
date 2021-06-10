@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Pay_Tips.Core.Services
 {
@@ -16,5 +17,10 @@ namespace Pay_Tips.Core.Services
           out int totalFiltered);
 
         Employee GetEmployee(int id);
+
+        Task<IEnumerable<Employee>> Get();
+
+        Task DeleteAsync(int id);   
+
     }
 }

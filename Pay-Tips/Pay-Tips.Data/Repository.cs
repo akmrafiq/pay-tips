@@ -14,13 +14,18 @@ namespace Pay_Tips.Data
         where TEntity : class, IEntity<TKey>
         where TContext : DbContext
     {
-        protected TContext _dbContext;
-        protected DbSet<TEntity> _dbSet;
+        protected readonly TContext _dbContext;
+        protected readonly DbSet<TEntity> _dbSet;
 
         public Repository(TContext context)
         {
             _dbContext = context;
             _dbSet = _dbContext.Set<TEntity>();
+        }
+
+        public TEntity GetById(TKey id)
+        {
+            return _dbSet.Find(id);
         }
 
         public virtual async Task AddAsync(TEntity entity)
