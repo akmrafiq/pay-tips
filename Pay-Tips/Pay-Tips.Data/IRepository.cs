@@ -1,12 +1,11 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
-using Microsoft.EntityFrameworkCore.Query;
 
 namespace Pay_Tips.Data
 {
@@ -14,7 +13,6 @@ namespace Pay_Tips.Data
         where TEntity : class, IEntity<TKey>
         where TContext : DbContext
     {
-
         TEntity GetById(TKey id);
         Task AddAsync(TEntity entity);
         Task RemoveAsync(TKey id);
@@ -22,7 +20,7 @@ namespace Pay_Tips.Data
         Task RemoveAsync(TEntity entityToDelete);
         Task<IList<TEntity>> GetAsync(Expression<Func<TEntity, bool>> filter);
         Task<IList<TEntity>> GetAllAsync();
-        
+
         Task<(IList<TEntity> data, int total, int totalDisplay)> GetAsync(
             Expression<Func<TEntity, bool>> filter = null,
             Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,

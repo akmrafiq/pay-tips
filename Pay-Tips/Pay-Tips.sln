@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pay-Tips.API", "Pay-Tips.API\Pay-Tips.API.csproj", "{B5B812E5-6A7A-4189-B111-EBDB41A91284}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pay-Tips.API", "Pay-Tips.API\Pay-Tips.API.csproj", "{B5B812E5-6A7A-4189-B111-EBDB41A91284}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pay-Tips.Data", "Pay-Tips.Data\Pay-Tips.Data.csproj", "{6C867524-0D99-4134-A0FC-F3C80D7BDBCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pay-Tips.Core", "Pay-Tips.Core\Pay-Tips.Core.csproj", "{711676FD-E8F9-401F-80ED-6FEE69142F0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pay-Tips.Core", "Pay-Tips.Core\Pay-Tips.Core.csproj", "{711676FD-E8F9-401F-80ED-6FEE69142F0A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pay-Tips.Data", "Pay-Tips.Data\Pay-Tips.Data.csproj", "{E70B6B4C-FD95-45C5-AB82-96E0960C7C90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{B5B812E5-6A7A-4189-B111-EBDB41A91284}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5B812E5-6A7A-4189-B111-EBDB41A91284}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5B812E5-6A7A-4189-B111-EBDB41A91284}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6C867524-0D99-4134-A0FC-F3C80D7BDBCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6C867524-0D99-4134-A0FC-F3C80D7BDBCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6C867524-0D99-4134-A0FC-F3C80D7BDBCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6C867524-0D99-4134-A0FC-F3C80D7BDBCB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{711676FD-E8F9-401F-80ED-6FEE69142F0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{711676FD-E8F9-401F-80ED-6FEE69142F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{711676FD-E8F9-401F-80ED-6FEE69142F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{711676FD-E8F9-401F-80ED-6FEE69142F0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E70B6B4C-FD95-45C5-AB82-96E0960C7C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E70B6B4C-FD95-45C5-AB82-96E0960C7C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E70B6B4C-FD95-45C5-AB82-96E0960C7C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E70B6B4C-FD95-45C5-AB82-96E0960C7C90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

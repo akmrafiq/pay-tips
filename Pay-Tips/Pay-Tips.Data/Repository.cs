@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Query;
 
 namespace Pay_Tips.Data
 {
@@ -62,7 +62,7 @@ namespace Pay_Tips.Data
             return await query.ToListAsync();
         }
 
-        public virtual async  Task<IList<TEntity>> GetAsync(
+        public virtual async Task<IList<TEntity>> GetAsync(
             Expression<Func<TEntity,
                 bool>> filter
             )
